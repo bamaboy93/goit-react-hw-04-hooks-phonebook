@@ -1,0 +1,33 @@
+.name {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.input {
+  margin-left: 10px;
+  margin-right: 20px;
+  width: 220px;
+}
+.input:focus {
+  outline: 2px solid turquoise;
+}
+
+.btn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid black;
+  background-color: whitesmoke;
+  padding: 3px;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+}
+.btn:focus,
+.btn:hover {
+  background-color: turquoise;
+  transform: scale(1.1);
+}

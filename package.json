@@ -1,5 +1,6 @@
 {
   "name": "goit-react-hw-04-hooks-phonebook",
+  "homepage":"https://bamaboy93.github.io/bamaboy93/goit-react-hw-04-hooks-phonebook/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

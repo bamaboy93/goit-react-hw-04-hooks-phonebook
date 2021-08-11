@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
 import styles from './Form.module.css';
-const Form = ({ addContactPhone }) => {
+const Form = ({ onSubmit }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
   const formSubmit = e => {
     e.preventDefault();
 
-    addContactPhone(name, number);
+    onSubmit({ name, number });
     setName('');
     setNumber('');
   };

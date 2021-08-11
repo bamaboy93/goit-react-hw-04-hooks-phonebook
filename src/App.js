@@ -10,7 +10,7 @@ const App = () => {
   const [contacts, setContacts] = useLocalStorage('contacts', '');
   const [filter, setFilter] = useState('');
 
-  const addContact = ({ name, number }) => {
+  const addContactPhone = ({ name, number }) => {
     if (contacts.find(contact => contact.name === name)) {
       alert(`${name} is already in contacts`);
       return;
@@ -42,7 +42,7 @@ const App = () => {
   return (
     <div className="Container">
       <h1 className="title">Phonebook</h1>
-      <ContactForm onSubmit={addContact} />
+      <ContactForm onSubmit={addContactPhone} />
       <h2 className="title">Contacts</h2>
       <Filter value={filter} onChange={changeFilter} />
       <ContactsList contacts={filteredContacts} onDeleteClick={deleteContact} />
